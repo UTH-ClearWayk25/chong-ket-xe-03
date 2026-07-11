@@ -1,0 +1,268 @@
+/* ===== PHẦN STYLE GỐC ĐÃ ĐỔI SANG TÔNG XANH TEAL UTH ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f6; /* Nền xám trắng nhẹ sang trọng */
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 16px; /* Bo góc tròn hơn giống app */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-top: 100px;
+}
+.hidden {
+  display: none !important;
+}
+.uth-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.uth-left {
+  font-family: "Times New Roman", serif;
+  font-size: 65px;
+  color: #157c70; /* Đổi sang màu xanh Teal chuẩn app */
+  font-weight: bold;
+}
+.uth-right {
+  line-height: 1.2;
+}
+.uth-right .line1,
+.uth-right .line2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d32f2f;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+h2 {
+  margin-top: 10px;
+  color: #157c70; /* Đổi sang màu xanh Teal */
+}
+.sub-title {
+  color: #555;
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: #edf6f5; /* Nền card xanh nhạt đồng bộ */
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  color: #157c70; /* Đổi sang màu xanh Teal */
+}
+.card p {
+  color: #444;
+  margin: 10px 0;
+}
+.card button {
+  background: #157c70; /* Nút màu xanh Teal */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* KHU VỰC ĐĂNG NHẬP GIỐNG APP 100% */
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 25px;
+  background: #157c70; /* Toàn bộ nền hộp đăng nhập hóa xanh Teal như app */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(21, 124, 112, 0.25);
+  color: white; /* Chữ biến thành màu trắng nổi bật */
+}
+
+/* Tự động sửa màu dòng chữ "Gợi ý gửi xe" bạn vừa thêm thành màu trắng cho đẹp */
+.login-box div {
+  color: white !important; 
+}
+
+.login-box h3 {
+  color: white !important;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.login-box input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0 18px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: white; /* Nút chuyển thành màu trắng */
+  color: #157c70; /* Chữ nút màu xanh Teal */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase; /* Chữ in hoa ĐĂNG NHẬP giống hình */
+  transition: all 0.2s;
+}
+.login-box button:hover {
+  background: #e6f2f0 !important; /* Hiệu ứng rà chuột */
+}
+
+/* CÁC PHẦN KHÁC ĐỒNG BỘ THEO TÔNG TEAL */
+.footer {
+  margin-top: 30px;
+  background: #edf6f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;   
+}
+.footer button {
+  margin: 10px;
+  background: #157c70;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card button:hover,
+.footer button:hover,
+.controls button:hover,
+.btn-secondary:hover {
+  background-color: #106157; /* Màu xanh Teal đậm khi hover */
+}
+
+/* ===== PHẦN MODAL ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: left;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.controls label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+.controls select,
+.controls input[type="datetime-local"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.controls button {
+  background: #157c70;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #157c70;
+}
+.note {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 5px;
+}
+.tooltip {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 13px;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+.btn-secondary {
+  background-color: #157c70;     
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card-body {
+  margin-top: 10px;
+}
+.feedback-btn,
+.logout-btn {
+  margin: 10px;
+  background: #157c70;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.feedback-btn a {
+  color: white;
+  text-decoration: none;
+}
